@@ -1,17 +1,12 @@
-        
-        <?php
+<?php
 require 'includes/common.php';
-if(!isset($_SESSION['email']))
-    {
-        
+if(!isset($_SESSION['email'])){
     echo "Only Logged in users can access this page.Please ";
      ?><a href="login.php" class="btn btn-primary">Login</a><?php
           die();
     }
 ?>
    
-
-
 <!DOCTYPE html>
 
 <html>
@@ -34,10 +29,8 @@ if(!isset($_SESSION['email']))
         include 'includes/header.php';
         $id=$_SESSION['id'];
         ?>
-        
-        
+
         <div class="container">
-        
         <table class="table table-striped table-bordered table-hover table-responsive" >
             <tbody>
                 <tr><th>Item Number</th>
